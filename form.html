@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    >
+</head>
+
+<body>
+    <div class="form">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Enter Your Details</div>
+        <div class="input-container ic1">
+            <textarea id="task_description" class="input" type="text" placeholder=" " rows="20" cols="30"></textarea>
+            <div class="cut"></div>
+            <label for="task_description" class="placeholder">Task Description</label>
+        </div>
+        <div class="input-container ic2">
+
+            <!-- <input id="lastname" class="input" type="text" placeholder=" " />
+          <div class="cut"></div>  -->
+
+            <label for="lastname" class="placeholder">Task Type</label>
+
+            <select name="task_type" id="task_type"
+                style=" background-color: rgb(21, 81, 118); margin-top:50px; margin-left: 20px;">
+                <option value="break">Break
+                <option>
+                <option value="meeting">Meeting</option>
+                <option value="work">Work</option>
+
+            </select>
+
+
+        </div>
+        <div class="input-container ic2">
+
+            <label for="start_time" class="placeholder">Start Time</label>
+            <input type="number" id="number">
+
+
+            <div class="input-container ic3">
+                <label for="time_taken" class="placeholder" style=" color: #65657b;">Time Taken</label>
+                <input type="number" id="time_taken">
+            </div>
+            <button type="text" class="submit">submit</button>
+        </div>
+        <script src="form.js"></script>
+</body>
+
+</html>
